@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layman>
-  <overlay contact="scott@alfter.us" name="salfter" src="http://salfter.github.com/" status="unofficial" type="git">
-    <link>https://github.com/salfter/portage</link>
+  <overlay contact="scott@alfter.us" name="salfter" src="https://github.com/salfter/portage" status="unofficial" type="git">
+    <link>http://salfter.github.com/</link>
     <description>Scott Alfter's ebuilds</description>
   </overlay>
 </layman>
