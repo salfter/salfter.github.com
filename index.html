@@ -1,1 +1,35 @@
-<html><body><p>This is a test.</p></body></html>
+<html>
+<head>
+<title>Scott Alfter's Gentoo Overlay</title>
+</head>
+<body>
+<h1>Scott Alfter's Gentoo Overlay</h1>
+<p>This is a collection of ebuilds I've written or modified over the years to get the apps I want into Gentoo.
+Some may have been superseded by other overlays or the main Portage tree, as many of these are version bumps
+I've based off of existing ebuilds to get the latest-and-greatest of something.  A few ebuilds (such as
+www-apps/conerto and net-p2p/litecoin) are AFAIK not available elsewhere.</p>
+<h2>Browse the Overlay</h2>
+<p>Go <a href="https://github.com/salfter/portage" target="_blank">here</a> to see what's inside.</p>
+<h2>Adding to Layman</h2>
+<ol>
+<li>Add http://salfter.github.com/layman.xml to the overlays list in /etc/layman/layman.cfg:<br />
+<code><pre>#-----------------------------------------------------------
+# URLs of the remote lists of overlays (one per line) or
+# local overlay definitions
+#
+#overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml
+#            http://dev.gentoo.org/~wrobel/layman/global-overlays.xml
+#            http://mydomain.org/my-layman-list.xml
+#            file:///var/lib/layman/my-list.xml
+
+overlays  : http://www.gentoo.org/proj/en/overlays/repositories.xml
+            ...
+            http://salfter.github.com/layman.xml</pre></code>
+</li>
+<li>Sync layman to update all overlays:<br />
+<code>layman -S</code></li>
+<li>Pull in my overlay:<br />
+<code>layman -a salfter</code></li>
+</ol>
+</body>
+</html>
