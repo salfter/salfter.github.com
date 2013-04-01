@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
-<repositories xmlns="" version="1.0">
-  <repo quality="experimental" status="unofficial">
-    <name><![CDATA[salfter]]></name>
-    <description><![CDATA[Scott Alfter's Portage Overlay]]></description>
-    <homepage>https://github.com/salfter/portage/wiki</homepage>
-    <owner>
-      <email>scott@alfter.us</email>
-    </owner>
-    <source type="git">git://github.com/salfter/portage</source>
-  </repo>
-</repositories>
+<layman>
+  <overlay contact="scott@alfter.us" name="salfter" src="http://salfter.github.com/" status="unofficial" type="git">
+    <link>https://github.com/salfter/portage</link>
+    <description>Scott Alfter's ebuilds</description>
+  </overlay>
+</layman>
